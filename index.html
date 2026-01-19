@@ -43,24 +43,67 @@
                 <p id="banner-p" class="w-[550px] text-base font-normal text-white mt-[8px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
             </div>
              <div class="mt-[24px] flex gap-x-[8px]">
-                <button class="text-base font-semibold text-white bg-linear-to-r from-[#F7E93F] from-0%  via-[#FB09B4] via-51% to-[#9100F8] to-100% hover:bg-none hover:bg-white hover:text-[#1A0B2E] px-[16px] py-[12px] rounded-full cursor-pointer">Listen on Spotify</button>
-                <button class="text-base font-semibold text-[#00FF88] border-1 border-[#00FF88] rounded-full px-[20px] py-[12px] hover:bg-linear-to-r from-[#F7E93F] from-0%  via-[#FB09B4] via-51% to-[#9100F8] to-100% hover:text-white hover:border-none cursor-pointer">Subscribe</button>
+                <button class="flex gap-x-[8px] items-center text-base font-semibold text-white bg-linear-to-r from-[#F7E93F] from-0%  via-[#FB09B4] via-51% to-[#9100F8] to-100% hover:bg-none hover:bg-white hover:text-[#1A0B2E] px-[16px] py-[12px] rounded-full cursor-pointer"><img width="20" height="20" src="assets/spotify.png" alt="spotify"/>Listen on Spotify</button>
+                <button class="flex gap-x-[8px] items-center text-base font-semibold text-[#00FF88] border-1 border-[#00FF88] rounded-full px-[20px] py-[12px] hover:bg-linear-to-r from-[#F7E93F] from-0%  via-[#FB09B4] via-51% to-[#9100F8] to-100% hover:text-white hover:border-none cursor-pointer"><img width="20" height="20" src="assets/message.png" alt="spotify"/>Subscribe</button>
              </div>
         </section>
     </header>
     <main>
-        <section class="bg-[#1A0B2E] w-full h-[646px] px-[200px] pt-[50px] pb-[120px]">
+        <section id="podcast-section" class="bg-[#1A0B2E] w-full h-[646px] lg:px-[200px] lg:pt-[50px] lg:pb-[120px]">
             <div class="text-center">
                 <h1 class="text-[48px] font-bold text-white mb-[16px]">About the Podcast</h1>
                 <p class="text-base text-white leading-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology<br> 
-                We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
-                and share stories of personal growth from industry leaders.<br><br>
+                We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                and share stories of personal growth from industry leaders.
 
                 Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
             </div>
-            <div></div>
+            <hr class="border-t border-white/15 my-[80px]">
+            <div id="podcast-cards" class="flex space-x-[80px] text-center justify-center">
+               <div id="card" class="w-[240px]">
+                <h1 class="text-[48px] font-black text-[#00FF88]">150K+</h1>
+                <p class="text-base text-white mt-[16px]">Monthly Listeners</p>
+               </div>
+               <div id="card" class="w-[240px]">
+                <h1 class="text-[48px] font-black text-[#00FF88]">200+</h1>
+                <p class="text-base text-white mt-[16px]">Episodes Published</p>
+               </div>
+               <div id="card" class="w-[240px]">
+                <h1 class="text-[48px] font-black text-[#00FF88]">4.9*</h1>
+                <p class="text-base text-white mt-[16px]">Average Rating</p>
+               </div>
+               <div id="card" class="w-[240px]">
+                <h1 class="text-[48px] font-black text-[#00FF88]">50+</h1>
+                <p class="text-base text-white mt-[16px]">Industry Experts</p>
+               </div> 
+            </div>
+        </section>
+        <section class="bg-[#230E3D] w-full h-[1121px] px-[200px] py-[120px]">
+            <h1 class="text-[48px] font-bold text-white text-center">Why Choose TechWave</h1>
         </section>
     </main>
+    <footer class="w-full h-[412px] bg-[url('../assets/footer-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white">
+        <img class="w-[410px] h-[60px]" src="assets/TechWave.png" alt="">
+        <div class="flex w-[544px] space-x-[40px] mt-[32px] justify-center items-center">
+            <div class="flex w-max space-x-[8px] justify-center">
+                <img class="w-[24px] h-[24px]" src="assets/spotify.png" alt="">
+                <p class="text-base text-white">Spotify</p>
+            </div>
+            <div class="flex w-max space-x-[8px] justify-center">
+                <img class="w-[24px] h-[24px]" src="assets/apple-podcast.png" alt="">
+                <p class="text-base text-white">Apple Podcasts</p>
+            </div>
+            <div class="flex w-max space-x-[8px]">
+                <img class="w-[24px] h-[24px]" src="assets/youtube.png" alt="">
+                <p class="text-base text-white">YouTube</p>
+            </div>
+            <div class="flex w-max space-x-[8px]">
+                <img class="w-[24px] h-[24px]" src="assets/twitter.png" alt="">
+                <p class="text-base text-white">Twitter</p>
+            </div>
+        </div>
+        <p class="mt-[32px] text-base text-[#FAFAFA]">© 2026 TechWave Podcast. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
