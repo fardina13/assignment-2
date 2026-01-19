@@ -23,23 +23,24 @@
 <body class="inter-font">
     <header>
         <nav class="bg-[#1A0B2E] flex justify-between px-[200px] py-[16px]">
-            <img class="w-[219px] h-[32px]" src="assets/TechWave.png" alt="">
+            <img id="logo" class="w-[219px] h-[32px]" src="assets/TechWave.png" alt="">
             <div class="nav-links flex gap-x-[32px] items-center">
                 <li class="text-base text-white font-medium list-none"><a href="">About</a></li>
                 <li class="text-base text-white font-medium list-none"><a href="">Episodes</a></li>
                 <li class="text-base text-white font-medium list-none"><a href="">Host</a></li>
             </div>
             <button class="text-base font-semibold text-white bg-linear-to-r from-[#F7E93F] from-0%  via-[#FB09B4] via-51% to-[#9100F8] to-100% hover:bg-none hover:bg-white hover:text-[#1A0B2E] px-[16px] py-[12px] rounded-full cursor-pointer">Subscribe <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            <img id="hamburger" class="w-[24px] h-[20px] block lg:hidden" src="assets/hamburger-menu.png" alt="">
         </nav>
-        <section class="w-full h-[760px] bg-[url('../assets/hero-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white">
+        <section id="banner" class="w-full h-[760px] bg-[url('../assets/hero-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white">
             <div class="relative flex items-center justify-center">
-                <img class="w-[350px] h-[350px] animate-pulse-slow" src="assets/hero-circle.png" alt="">
-                <img class="absolute" src="assets/microphone.png" alt="">
-                <span class="absolute top-8 right-8 bg-[#00FF88] text-[#1A0B2E] text-[18px] font-semibold px-[16px] py-[8px] rounded-full transition-all duration-500 hover:shadow-[0_0_30px_#00FF88] hover:scale-110 cursor-default shadow-[0_3px_27px_0_#00FF88] border-none">NEW</span>
+                <img id="circle" class="w-[350px] h-[350px] animate-pulse-slow" src="assets/hero-circle.png" alt="">
+                <img id="microphone" class="absolute" src="assets/microphone.png" alt="">
+                <span id="badge-new" class="absolute top-8 right-8 bg-[#00FF88] text-[#1A0B2E] text-[18px] font-semibold px-[16px] py-[8px] rounded-full transition-all duration-500 hover:shadow-[0_0_30px_#00FF88] hover:scale-110 cursor-default shadow-[0_3px_27px_0_#00FF88] border-none">NEW</span>
             </div>
             <div class="text-center">
-                <h1 class="text-6xl font-extrabold text-white mt-[40px]">TechWave</h1>
-                <p class="w-[550px] text-base font-normal text-white mt-[8px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <h1 id="banner-text" class="text-6xl font-extrabold text-white mt-[40px]">TechWave</h1>
+                <p id="banner-p" class="w-[550px] text-base font-normal text-white mt-[8px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
             </div>
              <div class="mt-[24px] flex gap-x-[8px]">
                 <button class="text-base font-semibold text-white bg-linear-to-r from-[#F7E93F] from-0%  via-[#FB09B4] via-51% to-[#9100F8] to-100% hover:bg-none hover:bg-white hover:text-[#1A0B2E] px-[16px] py-[12px] rounded-full cursor-pointer">Listen on Spotify</button>
@@ -47,6 +48,19 @@
              </div>
         </section>
     </header>
+    <main>
+        <section class="bg-[#1A0B2E] w-full h-[646px] px-[200px] pt-[50px] pb-[120px]">
+            <div class="text-center">
+                <h1 class="text-[48px] font-bold text-white mb-[16px]">About the Podcast</h1>
+                <p class="text-base text-white leading-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology<br> 
+                We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
+                and share stories of personal growth from industry leaders.<br><br>
+
+                Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <div></div>
+        </section>
+    </main>
     
 </body>
 </html>
