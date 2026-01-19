@@ -2,6 +2,7 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
 @media screen and (max-width:576px){
   nav {
     height: 60px;
