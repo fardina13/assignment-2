@@ -53,7 +53,7 @@
     </header>
     <main>
         <!-- podcast-section -->
-        <section id="podcast-section" class="bg-[#1A0B2E] w-full h-[646px] lg:px-[200px] lg:pt-[50px] lg:pb-[120px]">
+        <section id="podcast-section" class="hidden bg-[#1A0B2E] w-full h-[646px] lg:px-[200px] lg:pt-[50px] lg:pb-[120px]">
             <div class="text-center">
                 <h1 class="text-[48px] font-bold text-white mb-[16px]">About the Podcast</h1>
                 <p class="text-base text-white leading-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology<br> 
@@ -83,7 +83,7 @@
             </div>
         </section>
         <!-- why choose techwave section -->
-        <section class="bg-[#230E3D] w-full h-[1121px] px-[200px] py-[120px]">
+        <section class="hidden bg-[#230E3D] w-full h-[1121px] px-[200px] py-[120px]">
             <h1 class="text-[48px] font-bold text-white text-center mb-[40px]">Why Choose TechWave</h1>
             <div class="grid grid-cols-3 gap-[30px] max-w-[1200px] mx-auto">
                 <div class="col-span-1 row-span-2  h-[480px] rounded-[40px] bg-[#351165]/40 p-[40px] shadow-[0px_4px_4px_0px_#00000040]">
@@ -113,12 +113,12 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#1A0B2E] w-full h-[1276px] px-[200px] py-[120px]">
+        <section class="hidden bg-[#1A0B2E] w-full lg:h-[1276px] px-[200px] py-[120px]">
             <!-- featured episodes -->
-            <div>
+            <div class="episodes">
                 <h1 class="text-[48px] font-bold text-white text-center mb-[40px]">Featured Episodes</h1>
-                <div class="flex gap-[30px] mb-[120px] items-center justify-center">
-                   <div class="w-[380px] h-[440px] bg-[#250D44] rounded-[20px] shadow-[0px_4px_4px_0px_#00000040]">
+                <div id="featured-episodes" class="flex gap-[30px] mb-[120px] items-center justify-center">
+                   <div id="card1" class="w-[380px] h-[440px] bg-[#250D44] rounded-[20px] shadow-[0px_4px_4px_0px_#00000040]">
                     <iframe class="rounded-t-[20px]" width="380" height="214" src="https://www.youtube.com/embed/l8rCsAZwLFw?si=EPM1jl5QaXVG045X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="p-[24px] space-y-[12px]">
                         <h5 class="text-[24px] font-bold text-white">The Future of AI in Everyday Life</h5>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <!-- meet the host -->
-             <div>
+             <div class="hidden">
                 <h1 class="text-[48px] font-bold text-white text-center mb-[40px]">Meet the Host</h1>
                 <div class="bg-[#533C72]/40 rounded-[20px] max-w-[1200px] h-[280px] mx-auto p-[40px] gap-x-[24px] flex shadow-[0px_4px_4px_0px_#00000040]">
                     <img src="assets/host.png" alt="">
@@ -173,22 +173,22 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="w-full h-[412px] bg-[url('./assets/footer-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white">
-        <img class="w-[410px] h-[60px]" src="assets/TechWave.png" alt="">
-        <div class="flex w-[544px] space-x-[40px] mt-[32px] justify-center items-center">
-            <div class="flex w-max space-x-[8px] justify-center">
+    <footer class="w-full lg:h-[412px] bg-[url('./assets/footer-bg.png')] bg-cover bg-center flex flex-col items-center justify-center text-white">
+        <img class="lg:w-[410px] lg:h-[60px]" src="assets/TechWave.png" alt="">
+        <div id="footer-card" class="flex w-[544px] space-x-[40px] mt-[32px] justify-center items-center">
+            <div id="footer-card1" class="flex w-max space-x-[8px] justify-center">
                 <img class="w-[24px] h-[24px]" src="assets/spotify.png" alt="">
                 <p class="text-base text-white">Spotify</p>
             </div>
-            <div class="flex w-max space-x-[8px] justify-center">
+            <div id="footer-card2" class="flex w-max space-x-[8px] justify-center">
                 <img class="w-[24px] h-[24px]" src="assets/apple-podcast.png" alt="">
                 <p class="text-base text-white">Apple Podcasts</p>
             </div>
-            <div class="flex w-max space-x-[8px]">
+            <div id="footer-card3" class="flex w-max space-x-[8px]">
                 <img class="w-[24px] h-[24px]" src="assets/youtube-podcast.png" alt="">
                 <p class="text-base text-white">YouTube</p>
             </div>
-            <div class="flex w-max space-x-[8px]">
+            <div id="footer-card4" class="flex w-max space-x-[8px]">
                 <img class="w-[24px] h-[24px]" src="assets/twitter.png" alt="">
                 <p class="text-base text-white">Twitter</p>
             </div>
