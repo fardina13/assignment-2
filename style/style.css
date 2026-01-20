@@ -71,7 +71,7 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
   }
-  ##podcast-section #podcast-cards #card {
+  #podcast-section #podcast-cards #card {
     width: 180px;
   } */
   
